@@ -47,7 +47,7 @@ const Excerpt = styled.p`
 
 const Article = ({ title, date, excerpt, slug, timeToRead, category }) => {
   const firstChar = title.charAt(0)
-
+  console.log(date)
   return (
     <Post>
       <Title>

@@ -51,6 +51,7 @@ const PostContent = styled.div`
 `
 
 const Post = ({ pageContext: { slug, prev, next }, data: { mdx: postNode } }) => {
+  console.log(postNode.frontmatter.date)
   const post = postNode.frontmatter
 
   return (
@@ -105,7 +106,7 @@ export const postQuery = graphql`
       excerpt
       frontmatter {
         title
-        date(formatString: "MM/DD/YYYY")
+        date(formatString: "DD/MM/YYYY")
         category
       }
       timeToRead

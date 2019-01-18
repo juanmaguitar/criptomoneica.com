@@ -51,7 +51,7 @@ const IndexPage = ({
       <Hero>
         <h1>Criptomoneica</h1>
         <p>
-          Hola! Soy JuanMa Garrido, <a href="https://www.linkedin.com/in/juanmagarrido/" target="_blank">Javascript Full Stack Developer y Trainer</a>. En este blog iré compartiendo lo que voy aprendiendo sobre <strong>Blockchain</strong> y <strong>Criptomonedas</strong>.
+          Hola! Soy JuanMa Garrido, <a href="https://www.linkedin.com/in/juanmagarrido/" target="_blank">Javascript Full Stack Developer y Trainer</a>. En este blog iré compartiendo algunas notas sobre <strong>Blockchain</strong> y <strong>Criptomonedas</strong>.
         </p>
         <Link to="/contact">
           <Button big>
@@ -100,7 +100,7 @@ export const IndexQuery = graphql`
           }
           frontmatter {
             title
-            date(formatString: "MM/DD/YYYY")
+            date(formatString: "DD/MM/YYYY")
             category
           }
           excerpt(pruneLength: 200)
