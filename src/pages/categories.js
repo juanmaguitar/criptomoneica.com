@@ -42,7 +42,7 @@ const Category = ({
         <Link to="/">{config.siteTitle}</Link>
       </Header>
       <Content>
-        <SectionTitle>Categories</SectionTitle>
+        <SectionTitle>Categorias</SectionTitle>
         {group.map(category => (
           <Title key={category.fieldValue}>
             <Link to={`/categories/${kebabCase(category.fieldValue)}`}>{category.fieldValue}</Link> (

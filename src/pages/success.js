@@ -48,8 +48,8 @@ const Success = () => (
         <Link to="/">{config.siteTitle}</Link>
       </Header>
       <Content>
-        <h1>Your message was sent!</h1>
-        <p>I'll answer your request as quick as possible.</p>
+        <h1>Tu mensaje ha sido enviado!</h1>
+        <p>Te contestaré lo antes posivble.</p>
       </Content>
     </Wrapper>
   </Layout>

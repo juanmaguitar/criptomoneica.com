@@ -50,12 +50,11 @@ const Contact = () => (
         <Link to="/">{config.siteTitle}</Link>
       </Header>
       <Content>
-        <h1>Contact</h1>
-        <p>Super cool intro text to get people contacting me! It uses Netlify's form feature.</p>
+        <h1>Contacto</h1>
         <form name="contact-form" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/success">
           <p>
             <label htmlFor="contact-name">
-              Name
+              Nombre
               <input name="name" id="contact-name" type="text" required />
             </label>
           </p>
@@ -66,11 +65,11 @@ const Contact = () => (
           </p>
           <p>
             <label htmlFor="contact-message">
-              Your Message <textarea name="message" id="contact-message" required />
+              Tu mensaje <textarea name="message" id="contact-message" required />
             </label>
           </p>
           <p>
-            <Button>Send</Button>
+            <Button>Enviar</Button>
           </p>
           <input type="hidden" name="form-name" value="contact-form" />
         </form>
