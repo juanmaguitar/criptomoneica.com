@@ -5,6 +5,8 @@ import { MDXProvider } from '@mdx-js/tag'
 import { preToCodeBlock } from 'mdx-utils'
 import Code from './src/components/Code'
 
+console.log('wrap-root-element...')
+
 // components is its own object outside of render so that the references to
 // components are stable
 const components = {

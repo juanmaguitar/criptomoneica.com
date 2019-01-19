@@ -1,74 +1,58 @@
 ---
 date: "2019-01-19"
-title: "Conceptos Basicos"
-category: "Blockchain"
+title: "Ethereum y Ethereum Classic"
+category: "Curso Plataformas Blockchain"
 ---
 
-[![](/blog/2019-01-19/cover-conceptos-basicos.png)](https://www.youtube.com/watch?v=KU4-pSfRBCs&index=1&list=PLEZfDGniHqtnrZTHdUtnQgjV3pY-olzsl)
+[![](/blog/2019-01-19/cover-ethereum.png)](https://www.youtube.com/watch?v=N-rg2N9avKE&index=2&list=PLEZfDGniHqtnrZTHdUtnQgjV3pY-olzsl)
 
-Curso para diferencias entre criptomonedas
+Plataformas Smart Contracts son Blockchains sobre las cuales puedes construir tus aplicaciones (puedes programar sobre ellas)  
+
+El lider de las Plataformas Smart Contracts es [Ethereum](https://www.ethereum.org/) y [las otras alternativas](https://medium.com/@SherCoin/shercoin-ecosystem-which-blockchain-platform-we-are-going-to-use-384365e98e0c) vienen de intentar resolver los problemas que tiene Ethereum
 
 
-Sobre todo plataformas **Smart Contracts**:
-- se podría decir que son las Blockchains o Criptomonedas que permiten construir otras criptomonedas encima de ellas
-- suelen ser consideradas las más importantes
+Ethereum tiene una comunidad enorme 
 
-## Blockchain
+En Ethereum cada persona tiene voz y voto por lo que las grandes discrepancias pueden generar lo que de llama un [Fork "duro"](https://es.cointelegraph.com/bitcoin-cash-for-beginners/what-is-hard-fork)
 
-Blockchain es una base de datos distribuida
-- donde toda la información se almacena en todos los nodos
-- donde todo el mundo participa de igual manera
-- modelo peer-to-peer aplicado a base de datos
+![Hard Fork](/blog/2019-01-19/hard-fork.png)
 
-_Principal Ventaja_: Muy dificil la "censura"  
-_Principal Desventaja_: La escalabilidad
+Se "rompe" el blockchain original generando 2 blockchains (el original y uno nuevo)
 
-## [Bitcoin](https://bitcoin.org/es/bitcoin-documento)
+## El "hack" de DAO 
 
-Primera Tecnología importante (popular) que utiliza Blockchain  
-Presentada por Satoshi Nakamoto en 2009  
-Algoritmos para decidir cuando se validan las transacciones  
-La idea era sustituir dinero actual por una moneda que fuera peer-to-peer y que no dependiera de ningún banco central  
+La primera discusión que se originó en Ethereum tiene que ver con una aplicación llamada [DAO](https://en.wikipedia.org/wiki/The_DAO_(organization))
 
-Papers: 
-- <https://bitcoin.org/bitcoin.pdf>
-- <https://bitcoin.org/files/bitcoin-paper/bitcoin_es.pdf>
+DAO es un proyecto que se montó encima de Ethereum y que da ayudas a las personas que quieren invertir en proyectos de Ethereum
 
-Bitcoin solo utiliza Blockchain para transacciones financieras
+En su momento lanzó una ICO que fue muy exitosa (15% del Ether existente en 2016)
 
-## [Ethereum](https://www.ethereum.org/)
+DAO tenía un problema grave de seguridad en uno de sus Smart Contracts que permitió a un hacker robar un montón de fondos (unos 150 millones de dolares en Ether) que afectó a un monton de inversores
 
-En 2013 [Vitalik Buterin](https://es.wikipedia.org/wiki/Vitalik_Buterin) propone utilizar Blockain para "todo" a traves de _Smart Contracts_ y un lenguaje de programación propio
+Esta persona no podía retirar esos fondos hasta que pasaran 30 días 
 
-En 2014 lanza su propio proyecto que es Ethereum y sale en 2015 con un exito arrollador
+La comunidad de Ethereum se reunió para buscar una solución a este problema. Habían 2 soluciones:
+- la situación es injusta por lo que hay que retroceder esta transacción al bloque anterior donde se había realizado el robo
+- la gracia de blockchain es que es automático, es immutable, por lo que hay que seguir adelante con todas sus consecuencias (arreglando el problema para que no vuelva a ocurrir) → [the code is law](https://medium.com/@bytemaster/the-intent-of-code-is-law-c0e0cd318032)
 
-La clave de Ethereum es realizar contratos automatizados para cualquier cosa. Descentralizar lo que está centralizado.
+Se produjo una ruptura
+- La mayor parte de la comunidad se movió a una nueva blokchain que se sigue llamando "Ethereum"
+- Otro grupo se quedó con la Blockchain original → [Ethereum Classic](https://ethereumclassic.github.io/) 
 
-La idea es muy buena pero la implementación viene con una serie de problemas que es donde entran todos sus competidores (para intentar resolver estos problemas)
+## Ethereum Classic
 
-Ethereum tiene un montón de competidores → <https://hackernoon.com/comparison-of-smart-contract-platforms-2796e34673b7>  
-...que proponen hacer lo mismo que Ethereum pero solucionando sus problemas
+El hermano pequeño de Ethereum  
+El blockchain Ethereum original que incluye el robo del DAO  
+Tiene una estructura diferente porque a nivel de desarrollo ha evolucionado diferente que Ethereum  
+Desde el punto de vista filosófico es la versión descentralizada e immutable realmente de Ethereum  
 
-## Problemas de Ethereum
+## [Ethereum Improvement Proposals](https://eips.ethereum.org/)
 
-- Escalabilidad
-- Cómo se validan los nodos (minado, [proof-of-work](https://es.wikipedia.org/wiki/Sistema_de_prueba_de_trabajo))
-  - Se gastan recursos y energía para resolver problemas matemáticos complejos
-  - Sólo funciona si la red no está corrompida (51% corrupto)
+Proposiciones para mejorar Ethereum donde los desarrolladores proponen cambios que son votados por la comunidad
 
-### Alternativas al proof-of-work
+### [eip-999](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-999.md)
 
-#### [Proof of Stake](https://en.wikipedia.org/wiki/Proof-of-stake)
 
-Prueba de tenencia de tokens
-
-- Si una persona desea ser parte de los que validan la red tiene que meter "dinero" de esa moneda.
-  - Ventaja: Coste 0. No hay gasto de energía
-  - Ventaja: Si destruyes la red estas yendo en contra de tus intereses
-
-#### [Delegated Proof of Stake](https://elcriptografo.com/2018/10/10/que-es-delegated-proof-of-stake/)
-
-La gente pone token en un deposito pero delegan el poder de tomar decisiones a un grupo concreto (democracia con partidos politicos)
 
 
 

@@ -4,7 +4,7 @@ module.exports = {
   siteTitle: 'Criptomoneica', // Navigation and Site Title
   siteTitleAlt: 'Criptomoneica - Apuntes sobre Blockchain y Criptomonedas', // Alternative Site title for SEO
   siteTitleManifest: 'Criptomoneica',
-  siteUrl: 'https://criptomoneica.com', // Domain of your site. No trailing slash!
+  siteUrl: 'https://criptomoneica.es', // Domain of your site. No trailing slash!
   siteLanguage: 'es', // Language Tag on <html> element
   siteHeadline: 'Writing and publishing content', // Headline for schema.org JSONLD
   siteBanner: '/social/_banner.jpg', // Your image for og:image tag. You can find it in the /static folder
