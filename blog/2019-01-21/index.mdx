@@ -1,0 +1,105 @@
+---
+date: "2019-01-21"
+title: "Neo"
+category: "Curso Plataformas Blockchain"
+---
+
+[![](/blog/2019-01-21/cover-neo.png)](https://www.youtube.com/watch?v=vHIhmTVosPE)
+
+<https://docs.neo.org/en-us/index.html>
+
+Neo se considera uno de los principales rivales de Ethereum  
+Originalmente viene de una compañia china llamada [AntShares](https://cryptocanucks.com/ico/Antshares)  
+
+Se ha planteado como un Ethereum de China  
+
+En China el blockchain está prohibido pero Neo no 
+Neo lleva implementado un sistema contra el blanqueo de dinero  
+Es una red bastante controlada  
+
+## Principales características
+
+👉  [NEO White Paper](https://docs.neo.org/en-us/whitepaper.html)
+
+Estan orientados principalmente en:
+
+- Digital Assets
+- Digital Identity
+- Smart Contract
+
+## Tokens
+
+Neo (el modelo económico de Neo) tiene 2 tokens diferentes:
+- NEO (abbreviated symbol NEO)
+    - Neo es algo así como acciones.
+    - Cuando compras Neo recibes dividendos (gas) por tenerlo
+        - También te da derecho a votar
+- NeoGas (abbreviated symbol GAS)
+    - Es la moneda, la criptomoneda aunque ellos no pretenden ser moneda ni alternativa al dinero
+    - Hay calculadoras que te dicen [cuanto Gas te dan segun el Neo](https://steemit.com/cryptocurrency/@basiccrypto/almost-everything-you-wanted-to-know-about-neo-part-2-of-2) que tengas → <https://neotogas.com/>
+
+## Protocole de consenso
+
+Otra diferencia basica con ether es que existen diferentes tipos de nodos
+
+El protocolo de [consenso](https://docs.neo.org/en-us/basic/consensus/consensus.html) que utiliza se llama [Delegated Byzantine Fault Tolerance] (https://steemit.com/neo/@basiccrypto/neo-s-consensus-protocol-how-delegated-byzantine-fault-tolerance-works)
+    - Es un sistema de votación
+    - Votas por un representante (speaker) que propone una serie de cambios
+        - los cambios son evaluados y votados y si un 66% de la red los acepta son integrados
+        - especie de delegated proof of stake
+
+Aqui no hay posibilidad de hard forks
+
+👉 [What is Practical Byzantine Fault Tolerance? Complete Beginner’s Guide](https://blockonomi.com/practical-byzantine-fault-tolerance/)  
+
+👉  [Hyperledger Fabric’s Chaincode, Practical Byzantine Fault Tolerance, and v1.0](https://www.altoros.com/blog/hyperledger-fabric-chaincode-practical-byzantine-fault-tolerance-and-v1-0/)  
+
+
+
+👉  [Clarification on NEO, GAS and Consensus Nodes](https://medium.com/neo-smart-economy/clarification-on-neo-gas-and-consensus-nodes-aa94d4f4b09)
+
+## Tipos de nodos
+
+![](https://www.altoros.com/blog/wp-content/uploads/2017/02/Hyperledger-Webinar-Thomas-Marckx-PBFT-2.jpg)
+
+3 tipos de nodos:
+
+- El usuario (persona que tiene Neo o Gas) → no pinta nada en el proceso
+- Nodo completo: repositorio de la información → tampoco pinta nada en el proceso
+- Bookkeeper (el que lleva los libros, equivalente al minero) → valida todo, tiene poder de votos
+     uno de los bookkeepers se convierte en speaker que es el que propone cambios
+
+Para ser bookkeeper necesitas:
+- necesitas tener un minimo de gas
+- se require identificacion completa de personas que quieran ser bookkeeers
+
+Hay 7 bookkeepers (Nov 2018) y todos pertenecen a la empresa onchain → sistema centralizado
+
+> This requires identity authentication of the controlling parties of the bookkeeping node to some extent, for one thing, to judge on their reputation and technological capacity, for another thing, should the nodes do evil, cryptographic evidence will be available for investigations. 
+
+👉 [(Almost) Everything you wanted to know about NEO (Part 1 of 2)](https://steemit.com/cryptocurrency/@basiccrypto/almost-everything-you-wanted-to-know-about-neo-part-1-of-2)
+
+👉 [Understanding the Onchain-NEO Relationship: Why You Should Care](https://medium.com/@onchain_dna/understanding-the-onchain-neo-relationship-why-you-should-care-b8e69649ef98)
+
+Dicen que van a empezar proceso de "descentralizacion" → aceptar a bookkeepers de fuera de la compañia  
+    - Onchange elegirá a la gente que será nominada para ser bookkeeper  
+    - Van a externalizar bookkeepers no realmente descentralizar  
+
+👉 [Coopetition: A New Approach to Decentralization](https://medium.com/proof-of-working/decentralization-from-coopetition-b10d7ce3b9d)
+
+> In line with these ideas, NEO will begin its decentralization by allowing well known commercial projects and communities to run consensus nodes, forming an initial confederation of actors with a strong interest in guaranteeing the security and success of the network. While it might seem counterintuitive, this architecture will be less centralized than many other networks today. Through coopetition, we can ensure that all players are equal in the network by design. Their power won’t depend on how much money they have, or how cheap their electricity may be.
+
+
+## Proyectos con Neo
+
+Neo funciona bastante bien → muchos tokens se han lanzado con Neo
+[Proyectos que funcionan con Neo](https://neoguide.io/nep-5-tokens-2/) son bastante buenos
+- casi todos los proyectos son chinos
+
+----
+
+Neo va muy rapido 50000 transacciones por segundo (bitcoin 7 tps, Ethereum 13 tps)
+    - Solo 7 nodos tienen que validar transacciones
+
+
+
