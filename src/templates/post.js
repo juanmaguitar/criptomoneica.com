@@ -51,7 +51,6 @@ const PostContent = styled.div`
 `
 
 const Post = ({ pageContext: { slug, prev, next }, data: { mdx: postNode } }) => {
-  console.log(postNode.frontmatter.date)
   const post = postNode.frontmatter
 
   return (
